@@ -35,7 +35,7 @@ button {
   padding: 1em;
 }
 .nav-desktop, .nav-mobile, .footer {
-  height: 8vh; /* placeholder */
+  height: 70px; /* placeholder */
   position: sticky;
   background: #612E94;
 }
@@ -43,7 +43,7 @@ button {
 
 /* Nav-Desktop */
 .nav-desktop {
-  display: none; /* flex/none */
+  display: none;
   align-content: space-between;
   align-items: center;
   top: 0;
@@ -71,7 +71,7 @@ button {
   transition: .2s;
 }
 .nav-mobile.active {
-  height: 17vh; /* placeholder */
+  height: 150px;
 }
 .nav-mobile h1 {
   width: 50%;
@@ -94,14 +94,14 @@ button {
 
 /* Main Content */
 .content {
-  min-height: 85vh; /* placeholder until i make adjustments*/
-  scroll-margin-top: 17vh; /* placeholder */
+  min-height: 85vh; /* placeholder */
+  scroll-margin-top: 150px;
 }
 
 
 /* Footer */
 .footer {
-  height: 7vh; /* placeholder */
+  height: 60px;
   bottom: 0;
   text-align: right;
 }
