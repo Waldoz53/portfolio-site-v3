@@ -1,4 +1,4 @@
 # portfolio-site-v3
 The latest version of my portfolio/personal site!
 
-Currently a prototype: fonts, content, colours are all TBD
+updated to the latest version! (2/10/2023)
