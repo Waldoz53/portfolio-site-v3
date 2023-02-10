@@ -7,45 +7,226 @@
   <title>Prototype Portfolio Site</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="https://kit.fontawesome.com/0d2262861e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0d2262861e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/0d2262861e.css" crossorigin="anonymous">
 </head>
 <body>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Yeseva+One&display=swap');
+  </style>
+  
   <div id="app">
-    <div class="nav-mobile" :class="{active: isMobileNavActive}">
-      <h1><a @click="mobileNavOff" href="#app">W</a></h1>
-      <button @click="toggleMobileNav"><i class="fas fa-bars fa-2x"></i></button>
-      <ul>
-        <li><a @click="mobileNavOff" href="#about">About</a></li>
-        <li><a @click="mobileNavOff" href="#work">Work</a></li>
-        <li><a @click="mobileNavOff" href="#anotherlink">AnotherLink?</a></li>
-        <li><a @click="mobileNavOff" href="#morelink">MoreLink??</a></li>
-      </ul>
-    </div>
-    
-    <div class="nav-desktop">
-      <h1><a href="#app">W</a></h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#anotherlink">AnotherLink?</a></li>
-        <li><a href="#morelink">MoreLink??</a></li>
-      </ul>
-    </div>
-    
-    <div class="content" id="about">About<br><br>Fonts and content are TBD<br><br>Is mobile nav active? {{ isMobileNavActive }}</div>
-    <div class="content" id="work">Work<br><br>Is mobile nav active? {{ isMobileNavActive }}</div>
-    <div class="content" id="anotherlink">AnotherLink<br><br>Is mobile nav active? {{ isMobileNavActive }}</div>
-    <div class="content" id="morelink">MoreLink<br><br>Is mobile nav active? {{ isMobileNavActive }}</div>
-    
-    <div class="footer">
-      <a href="#">
-        <i class="fab fa-twitter-square fa-2x"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-github-square fa-2x"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
+    <div class="main">
+      <div class="nav">
+        <a href="#">
+          <h3>W</h3>
+        </a>
+        <div class="spacer"></div>
+        <ul>
+          <a href="#work">
+            <li>Work</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="section purple intro">
+        
+        <div class="intro-main">
+          <h1>I'm Waleed.</h1>
+          <p>&nbsp;</p>
+          <p>Front End Developer</p>
+        </div>
+      </div>
+      
+      <div class="section white">
+        <div class="section-title" style="width:100%;">
+          <h1>What I Do</h1>
+          <div class="redbar"></div>
+          <div class="whatdo-container">
+            <div class="whatdo">
+              <div class="whatdo-circle">
+                <i class="fa-brands fa-shopify fa-2xl"></i>
+              </div>
+              <h3>Shopify</h3>
+            </div>
+            <div class="whatdo">
+              <div class="whatdo-circle">
+                <i class="fa-brands fa-react fa-2xl"></i>
+              </div>
+              <h3>React</h3>
+            </div>
+            <div class="whatdo">
+              <div class="whatdo-circle">
+                <i class="fa-brands fa-vuejs fa-2xl"></i>
+              </div>
+              <h3>Vue</h3>
+            </div>
+            <div class="whatdo">
+              <div class="whatdo-circle">
+                <i class="fa-sharp fa-solid fa-cloud-bolt fa-2xl"></i>
+              </div>
+              <h3>Front End</h3>
+            </div>
+            <div class="whatdo">
+              <div class="whatdo-circle">
+                <i class="fa-solid fa-palette fa-2xl"></i>
+              </div>
+              <h3>UX</h3>
+            </div>
+            <div class="whatdo">
+              <div class="whatdo-circle">
+                <i class="fa-solid fa-gamepad fa-2xl"></i>
+              </div>
+              <h3>Game Dev</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section purple" id="work">
+        <div class="section-title">
+          <h1>Work</h1>
+          <div class="redbar"></div>
+          <div class="work-container">
+            <div class="work-card">
+              <div class="work-card-top"  @click="toggleCard(0)">
+                <h3>Collection Template 2.0</h3>
+                <h3 class="work-card-subtitle">Sukoshi Mart</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(0)">
+                  <a href="https://sukoshimart.com/collections/beauty" target="_blank">View Page</a>
+                  <br><br>
+                  <p>While the online store transitioned to the Shopify 2.0 themes, which another developer was handling, I was in charge of creating the 2.0 collection template.<p>
+                  <p>The new functionality of the collection page was to have endless scrolling along with filters specifically for the brands available on each collection.</p>
+                  <p>Shopify by default doesn't support endless scrolling pagination, but with some HTTP request tricks, you CAN add parts of pages or in this case, the product card elements, on to the same page.</p>
+                  <p>Since the content loads fast enough, it also lets me delete and update parts of the page, which is how the brand filter works. Click on any of the "Brand" tags on the lower left hand panel, and it'll delete all products on the page and load in products that match the Brand filter.</p>
+                  <p>Almost all the main collections use this template, so you can browse larger or smaller collections.</p>
+                  <p><strong>There have been significant changes to the endless scrolling/filtering system for collections since I left Sukoshi Mart: the collections no longer have endless scrolling, the brand filtering still exists, but keeps things paginated.</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top" @click="toggleCard(1)">
+                <h3>Help Centre Prototype</h3>
+                <h3 class="work-card-subtitle">The Brick</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(1)">
+                  <a href="https://codepen.io/wrawasia/pen/rNVmWvM" target="_blank">View Codepen Prototype</a>
+                  <br><br>
+                  <p>Given the task of entirely recreating the Help Centre page on The Brick's website, I took inspiration from various other online stores, but one design I liked was Staples' Help Centre.</p>
+                  <p>It looks fairly similar to the Staples design, but there was one thing that bothered me about it: searching for anything required loading a new page of search results. The Brick's Help Centre is fairly small, in comparison, so I thought it'd be a waste of resources to have a search system just for the help centre.</p>
+                  <p>Instead, I thought about previous projects I have worked on, and remembered an instant search/filter system I tried making before, which filtered out data coming in from an HTTP request.</p>
+                  <p>This Help Centre page instead has an instant search filter that hides elements that don't contain the current search term. It uses a CDN version of a NPM module, Mark.js, which highlights and removes the highlight from the search term, as the user types out a search term.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top" @click="toggleCard(2)">
+                <h3>Financial Calculation Prototype</h3>
+                <h3 class="work-card-subtitle">The Brick</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(2)">
+                  <a href="https://codepen.io/wrawasia/pen/PvxGeV" target="_blank">View Codepen Prototype</a>
+                  <br><br>
+                  <p>A little UI element that displays what a product would cost if you purchased it with either the red The Brick card or the green The Brick card, which had different payment setups.</p>
+                  <p>While the live product design is just some basic styling and no moving parts, I was very proud of how this looked and felt to use.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top" @click="toggleCard(3)">
+                <h3>Elden Ring Challenge Run Generator</h3>
+                <h3 class="work-card-subtitle">Personal Project</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(3)">
+                  <a href="https://codepen.io/wrawasia/pen/PvxGeV" target="_blank">View Codepen Source</a>
+                  <br><br>
+                  <p>Originally built as a Skyrim rogue-like run generator, as part of a massive Skyrim mod setup I was using to create a rogue-like Skyrim (after you'd die, you'd create a new character and start from scratch).</p>
+                  <p>I switched it up since Skyrim Special Edition got a major update which broke a big chunk of my mods, and I was playing Elden Ring and thought of modifying it for Elden Ring.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top" @click="toggleCard(4)">
+                <h3>Vue To Do List</h3>
+                <h3 class="work-card-subtitle">Personal Project</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(4)">
+                  <a href="https://codepen.io/wrawasia/pen/poJjgJd" target="_blank">View Codepen Source</a>
+                  <br><br>
+                  <p>A basic to do list in Vue, but with some design/styling I think works really well.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top" @click="toggleCard(5)">
+                <h3>Vue Timer</h3>
+                <h3 class="work-card-subtitle">Personal Project</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(5)">
+                  <a href="https://codepen.io/wrawasia/pen/OJVpWpN" target="_blank">View Codepen Source</a>
+                  <br><br>
+                  <p>A timer built in Vue, with a few different time options.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top" @click="toggleCard(6)">
+                <h3>Unity/C# Asteroids Game</h3>
+                <h3 class="work-card-subtitle">Personal Project</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(6)">
+                  <a href="https://github.com/Waldoz53/unity-asteroids" target="_blank">View Github Source</a><br>
+                  <a href="https://waldoz53.github.io/unity-asteroids/" target="_blank">View Playable Demo<br>(desktop/laptop only)</a>
+                  <br><br>
+                  <p>Unity game, built in C#, with assets hand drawn in Paint by myself. I like how everything works, and I'm especially proud of the jet/flame flicker animation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section white" id="contact">
+        <div class="section-title">
+          <h1>Contact</h1>
+          <div class="redbar"></div>
+          <div class="contact-container">
+            <p><strong>Email:</strong>&nbsp;<span @click="showEmail">{{ clickMe }}</span></p>
+            <div class="contact-icon-container">
+              <!-- icons here -->
+              <a href="https://www.linkedin.com/in/waleed-rawasia/">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://github.com/Waldoz53/">
+                <i class="fa-brands fa-square-github fa-2x"></i>
+              </a>
+              <a href="https://twitter.com/Waldoz53">
+                <i class="fa-brands fa-square-twitter fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
