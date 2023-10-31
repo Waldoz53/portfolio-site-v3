@@ -96,11 +96,44 @@
           <div class="work-container">
             <div class="work-card">
               <div class="work-card-top"  @click="toggleCard(0)">
+                <h3>Toy Log (WIP as of 2023)</h3>
+                <h3 class="work-card-subtitle">Personal Project</h3>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(0)">
+                  <a href="https://3xd4g8.csb.app/" target="_blank">View prototype on CodeSandbox</a>
+                  <a href="https://github.com/Waldoz53/toy-log" target="_blank">View Github</a>
+                  <br><br>
+                  <p>A work in progress. I collection action figures (primarily Transformers, some Lego, some others). While other alternatives to maintaining a database of items exist (other websites or apps, or an Excel file even), I wanted to make something myself.</p>
+                  <p>At the moment: it's just a to-do list, but theres a long list of features to be added.</p>
+                  <p>Current stack: React front-end only</p>
+                  <p>Future stack: React plus MongoDB/Express/Node</p>
+                  <ol>
+                    <li>Date added - requires date picker</li>
+                    <li>Change delete button to recycle bin icon</li>
+                    <li>Only show delete button on hovering over the item</li>
+                    <li>Add networking - will require a lot of work!</li>
+                    <li>Prettify the rest of the web app</li>
+                    <li>Networking: Login/logout properly (and save locally?)</li>
+                    <li>Networking: save collections to account</li>
+                    <li>
+                      Networking feature: Add little loading animations to anything that
+                      loads information
+                    </li>
+                    <li>Routing: user login/sign up page</li>
+                    <li>Routing: view user collections (.com/username?)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <div class="work-card-top"  @click="toggleCard(1)">
                 <h3>Collection Template 2.0</h3>
                 <h3 class="work-card-subtitle">Sukoshi Mart</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(0)">
+                <div @click="toggleCard(1)">
                   <a href="https://sukoshimart.com/collections/beauty" target="_blank">View Page</a>
                   <br><br>
                   <p>While the online store transitioned to the Shopify 2.0 themes, which another developer was handling, I was in charge of creating the 2.0 collection template.<p>
@@ -114,12 +147,12 @@
             </div>
 
             <div class="work-card">
-              <div class="work-card-top" @click="toggleCard(1)">
+              <div class="work-card-top" @click="toggleCard(2)">
                 <h3>Help Centre Prototype</h3>
                 <h3 class="work-card-subtitle">The Brick</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(1)">
+                <div @click="toggleCard(2)">
                   <a href="https://codepen.io/wrawasia/pen/rNVmWvM" target="_blank">View Codepen Prototype</a>
                   <br><br>
                   <p>Given the task of entirely recreating the Help Centre page on The Brick's website, I took inspiration from various other online stores, but one design I liked was Staples' Help Centre.</p>
@@ -131,12 +164,12 @@
             </div>
 
             <div class="work-card">
-              <div class="work-card-top" @click="toggleCard(2)">
+              <div class="work-card-top" @click="toggleCard(3)">
                 <h3>Financial Calculation Prototype</h3>
                 <h3 class="work-card-subtitle">The Brick</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(2)">
+                <div @click="toggleCard(3)">
                   <a href="https://codepen.io/wrawasia/pen/PvxGeV" target="_blank">View Codepen Prototype</a>
                   <br><br>
                   <p>A little UI element that displays what a product would cost if you purchased it with either the red The Brick card or the green The Brick card, which had different payment setups.</p>
@@ -146,12 +179,12 @@
             </div>
 
             <div class="work-card">
-              <div class="work-card-top" @click="toggleCard(3)">
+              <div class="work-card-top" @click="toggleCard(4)">
                 <h3>Elden Ring Challenge Run Generator</h3>
                 <h3 class="work-card-subtitle">Personal Project</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(3)">
+                <div @click="toggleCard(4)">
                   <a href="https://codepen.io/wrawasia/pen/PvxGeV" target="_blank">View Codepen Source</a>
                   <br><br>
                   <p>Originally built as a Skyrim rogue-like run generator, as part of a massive Skyrim mod setup I was using to create a rogue-like Skyrim (after you'd die, you'd create a new character and start from scratch).</p>
@@ -161,12 +194,12 @@
             </div>
 
             <div class="work-card">
-              <div class="work-card-top" @click="toggleCard(4)">
+              <div class="work-card-top" @click="toggleCard(5)">
                 <h3>Vue To Do List</h3>
                 <h3 class="work-card-subtitle">Personal Project</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(4)">
+                <div @click="toggleCard(5)">
                   <a href="https://codepen.io/wrawasia/pen/poJjgJd" target="_blank">View Codepen Source</a>
                   <br><br>
                   <p>A basic to do list in Vue, but with some design/styling I think works really well.</p>
@@ -175,12 +208,12 @@
             </div>
 
             <div class="work-card">
-              <div class="work-card-top" @click="toggleCard(5)">
+              <div class="work-card-top" @click="toggleCard(6)">
                 <h3>Vue Timer</h3>
                 <h3 class="work-card-subtitle">Personal Project</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(5)">
+                <div @click="toggleCard(6)">
                   <a href="https://codepen.io/wrawasia/pen/OJVpWpN" target="_blank">View Codepen Source</a>
                   <br><br>
                   <p>A timer built in Vue, with a few different time options.</p>
@@ -189,12 +222,12 @@
             </div>
 
             <div class="work-card">
-              <div class="work-card-top" @click="toggleCard(6)">
+              <div class="work-card-top" @click="toggleCard(7)">
                 <h3>Unity/C# Asteroids Game</h3>
                 <h3 class="work-card-subtitle">Personal Project</h3>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(6)">
+                <div @click="toggleCard(7)">
                   <a href="https://github.com/Waldoz53/unity-asteroids" target="_blank">View Github Source</a><br>
                   <a href="https://waldoz53.github.io/unity-asteroids/" target="_blank">View Playable Demo<br>(desktop/laptop only)</a>
                   <br><br>
