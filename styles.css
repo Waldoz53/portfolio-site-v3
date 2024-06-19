@@ -121,16 +121,19 @@
   padding-top: 24px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 16px;
   padding: 1em;
 }
 .work-container .work-card {
   background: white;
-  border: 1px solid black;
-  border-radius: 6px;
-  box-shadow: 2px 2px 0px #000000;
+  border-top: 1px solid #bbb;
   padding: 1em;
   width: 100%;
+}
+.work-card:first-child {
+  border-radius: 6px 6px 0 0;
+}
+.work-card:last-child {
+  border-radius: 0 0 6px 6px;
 }
 .work-card p {
   margin-bottom: 8px;
@@ -139,8 +142,10 @@
   font-size: 15px;
   color: #666;
   font-weight: normal;
+  margin: 0;
+  margin-top: 8px;
 }
-.work-card-top {
+.work-card {
   cursor: pointer;
 }
 .work-card-bottom {
