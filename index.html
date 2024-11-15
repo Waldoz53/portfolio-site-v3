@@ -105,7 +105,8 @@
                   <br><br>
                   <p>A straightforward redesign following a specified design. Most of this page is just CSS overriding the Yotpo plugin/app's control of this page, except for the Beauty Challenges section.</p>
                   <p>The Beauty Challenges section consumes Yotpo's Loyalty API. It searches through all available Earning Rules (which are things like Spend X to get 50 points) and through Shopify's Liquid I've added a block system to allow a user to customize which Earning Rules (based on the Earning Rule ID) are visible on this page, which are specifically only certain Beauty Challenges.</p>
-                  <p>The API also fetches a customer's action history (which earning rules, rewards, etc they have claimed successfully) and if a customer has successfully completed a Beauty Challenge, it marks the challenge as completed.</p>
+                  <p>The Beauty Challenge tiles are created by taking the Earning Rule's point value (20 points), the details of how to progress/complete a challenge (Spend X to get 20 points), and include an expiry date for the earning rule. All of these options are customizable within the Yotpo app dashboard on Shopify.</p>
+                  <p>The API also fetches a customer's action history (which earning rules, rewards, etc has a customer claimed successfully) and if a customer has successfully completed a Beauty Challenge, it marks the challenge as completed.</p>
                 </div>
               </div>
             </div>
