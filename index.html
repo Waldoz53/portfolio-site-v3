@@ -96,11 +96,25 @@
           <div class="work-container">
             <div class="work-card" @click="toggleCard(0)">
               <div class="work-card-top">
+                <h3>React Blog w/ Postgres, Node, Express</h3>
+                <p class="work-card-subtitle">Personal Project</p>
+              </div>
+              <div class="work-card-bottom">
+                <div @click="toggleCard(0)">
+                  <a href="https://github.com/Waldoz53/my-react-blog" target="_blank">View Github</a>
+                  <br><br>
+                  <p>A simple CRUD blog in React. Uses PostgreSQL as a backend database and Express/Node for server functions</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="work-card" @click="toggleCard(1)">
+              <div class="work-card-top">
                 <h3>Rewards Page Redesign</h3>
                 <p class="work-card-subtitle">Sukoshi Mart</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(0)">
+                <div @click="toggleCard(1)">
                   <a href="https://sukoshimart.com/pages/sukoshi-rewards" target="_blank">View Page</a>
                   <br><br>
                   <p>A straightforward redesign following a specified design. Most of this page is just CSS overriding the Yotpo plugin/app's control of this page, except for the Beauty Challenges section.</p>
@@ -111,13 +125,13 @@
               </div>
             </div>
 
-            <div class="work-card" @click="toggleCard(1)">
+            <div class="work-card" @click="toggleCard(2)">
               <div class="work-card-top">
                 <h3>Toy Log (WIP as of 2025)</h3>
                 <p class="work-card-subtitle">Personal Project</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(1)">
+                <div @click="toggleCard(2)">
                   <a href="https://3xd4g8.csb.app/" target="_blank">View CodeSandbox prototype</a><!-- <br> -->
                   <!-- <a href="https://github.com/Waldoz53/toy-log" target="_blank">View Github</a> -->
                   <br><br>
@@ -144,13 +158,13 @@
               </div>
             </div>
 
-            <div class="work-card" @click="toggleCard(2)">
+            <div class="work-card" @click="toggleCard(3)">
               <div class="work-card-top">
                 <h3>Collection Template 2.0</h3>
                 <p class="work-card-subtitle">Sukoshi Mart</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(2)">
+                <div @click="toggleCard(3)">
                   <a href="https://sukoshimart.com/collections/beauty" target="_blank">View Page</a>
                   <br><br>
                   <p>While the online store transitioned to the Shopify 2.0 themes, which another developer was handling, I was in charge of creating the 2.0 collection template.<p>
@@ -163,13 +177,13 @@
               </div>
             </div>
 
-            <div class="work-card" @click="toggleCard(3)">
+            <div class="work-card" @click="toggleCard(4)">
               <div class="work-card-top">
                 <h3>Help Centre Prototype</h3>
                 <p class="work-card-subtitle">The Brick</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(3)">
+                <div @click="toggleCard(4)">
                   <a href="https://codepen.io/wrawasia/pen/rNVmWvM" target="_blank">View Codepen Prototype</a>
                   <br><br>
                   <p>Given the task of entirely recreating the Help Centre page on The Brick's website, I took inspiration from various other online stores, but one design I liked was Staples' Help Centre.</p>
@@ -180,13 +194,13 @@
               </div>
             </div>
 
-            <div class="work-card" @click="toggleCard(4)">
+            <div class="work-card" @click="toggleCard(5)">
               <div class="work-card-top">
                 <h3>Financial Calculation Prototype/Live Version</h3>
                 <p class="work-card-subtitle">The Brick</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(4)">
+                <div @click="toggleCard(5)">
                   <a href="https://codepen.io/wrawasia/pen/PvxGeV" target="_blank">View Codepen Prototype</a><br>
                   <a href="https://www.thebrick.com/products/kobe-genuine-leather-reclining-sofa-stone-1" target="_blank">View Live version</a>
                   <br><br>
@@ -197,13 +211,13 @@
               </div>
             </div>
 
-            <div class="work-card" @click="toggleCard(5)">
+            <div class="work-card" @click="toggleCard(6)">
               <div class="work-card-top">
                 <h3>Elden Ring Challenge Run Generator</h3>
                 <p class="work-card-subtitle">Personal Project</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(5)">
+                <div @click="toggleCard(6)">
                   <a href="https://codepen.io/wrawasia/pen/PvxGeV" target="_blank">View Codepen Source</a>
                   <br><br>
                   <p>Originally built as a Skyrim rogue-like run generator, as part of a massive Skyrim mod setup I was using to create a rogue-like Skyrim (after you'd die, you'd create a new character and start from scratch).</p>
@@ -212,30 +226,16 @@
               </div>
             </div>
 
-            <div class="work-card" @click="toggleCard(6)">
+            <div class="work-card" @click="toggleCard(7)">
               <div class="work-card-top">
                 <h3>Vue To Do List</h3>
                 <p class="work-card-subtitle">Personal Project</p>
               </div>
               <div class="work-card-bottom">
-                <div @click="toggleCard(6)">
+                <div @click="toggleCard(7)">
                   <a href="https://codepen.io/wrawasia/pen/poJjgJd" target="_blank">View Codepen Source</a>
                   <br><br>
                   <p>A basic to do list in Vue, but with some design/styling I think works really well.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="work-card" @click="toggleCard(7)">
-              <div class="work-card-top">
-                <h3>Vue Timer</h3>
-                <p class="work-card-subtitle">Personal Project</p>
-              </div>
-              <div class="work-card-bottom">
-                <div @click="toggleCard(7)">
-                  <a href="https://codepen.io/wrawasia/pen/OJVpWpN" target="_blank">View Codepen Source</a>
-                  <br><br>
-                  <p>A timer built in Vue, with a few different time options.</p>
                 </div>
               </div>
             </div>
@@ -250,7 +250,7 @@
           <div class="redbar"></div>
           <div class="contact-container">
             <p><strong>Email:</strong>&nbsp;<span @click="showEmail">{{ clickMe }}</span></p>
-            <a href="Waleed_Rawasia.pdf"><p><strong>My updated resume (November 2024)</strong></p></a>
+            <a href="Resume-waleed-rawasia-march2025.pdf"><p><strong>My updated resume (March 2025)</strong></p></a>
             <div class="contact-icon-container">
               <!-- icons here -->
               <a href="https://www.linkedin.com/in/waleed-rawasia/">
