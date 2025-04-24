@@ -1,8 +1,8 @@
 const App = {
   data() {
     return {
-      workCards: [false, false, false, false, false, false, false, false],
-      hiddenEmail: "waleed.rawasia@gmail.com",
+      workCards: [false, false, false, false, false, false, false, false, false, false],
+      hiddenEmail: "waleed_rawasia@hotmail.com",
       clickMe: "click to show"
     }
   },
